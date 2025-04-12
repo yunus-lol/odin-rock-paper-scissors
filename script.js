@@ -38,25 +38,16 @@ function playRound(humanChoice, computerChoice){
 }
 
 function playGame(){
-  getComputerChoice();
-  getHumanChoice()
-  playRound();
-  getComputerChoice();
-  getHumanChoice()
-  playRound();
-  getComputerChoice();
-  getHumanChoice()
-  playRound();
-  getComputerChoice();
-  getHumanChoice()
-  playRound();
+  const humanSelection = getHumanChoice();
+  const computerSelection = getComputerChoice();
+  
+  playRound(humanSelection, computerSelection)
 }
 
-
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
+playGame();
+playGame();
+playGame();
+playGame();
 playGame();
 
 if (humanScore > computerScore){
