@@ -7,7 +7,7 @@ function getComputerChoice() {
   computerNumber = Math.random();
   if (computerNumber >= 0.66){
     return "rock";
-  } else if (computerNumber >= 0.33){
+  } else if (computerNumber >= 0.33) {
     return "paper";
   } else {
     return "scissors";
